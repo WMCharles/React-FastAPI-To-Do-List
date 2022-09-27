@@ -1,28 +1,24 @@
 {
-    "todos": [
-        {
-            "id":1,
-            "title":"For what reason would it be advisable."
-        },
-        {
-            "id":2,
-            "title":"For what reason would it be advisable for me to think."
-        },
-        {
-            "id":3,
-            "title":"it be advisable for me to think about business content?"
-        },
-        {
-            "id":4,
-            "title":"Print Statements all"
-        },
-        {
-            "id":5,
-            "title":"Call Rampbo"
-        },
-        {
-            "id":6,
-            "title":"Print bills"
-        }
-    ]
+  "todos": [
+    {
+      "title": "Cook Rice for Supper",
+      "id": 1,
+      "complete": false
+    },
+    {
+      "title": "Clean t-shirt",
+      "id": 2,
+      "complete": true
+    },
+    {
+      "title": "Figure out how to update checked",
+      "id": 5,
+      "complete": false
+    },
+    {
+      "title": "Just Updated Checked Box",
+      "complete": true,
+      "id": 6
+    }
+  ]
 }
