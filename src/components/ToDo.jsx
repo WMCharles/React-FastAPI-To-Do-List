@@ -20,6 +20,14 @@ function ToDo() {
         const newTodos = [...todos, item]
         setTodos(newTodos)
     }
+
+    // Delete Item & Update todo items
+    // Passed to TodoList prop
+    function deleteItem(deletedItem){
+        const updatedTodos = todos.filter((item) => item.id !== deletedItem.id)
+        console.log(updatedTodos)
+    }
+
     return (
         <div className="container">
             <div className="page-content page-container" id="page-content">
@@ -30,7 +38,7 @@ function ToDo() {
                                 <div className="card-body">
                                     <h4 className="card-title">Awesome Todo list</h4>
                                     <TodoForm addItem={addItem}/>
-                                    <TodoList items={todos}/>
+                                    <TodoList items={todos} deleteItem={deleteItem}/>
                                 </div>
                             </div>
                         </div>
