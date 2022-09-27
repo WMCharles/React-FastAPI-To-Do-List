@@ -6,7 +6,8 @@ function TodoForm({addItem}) {
         event.preventDefault()
         
         const newItem = {
-            title: input
+            title: input,
+            complete: false
         }
 
         fetch("http://localhost:3000/todos", {
