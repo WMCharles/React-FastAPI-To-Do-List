@@ -33,7 +33,7 @@ export default function TodoList({items, deleteItem, updateTodos}) {
             <ul className="d-flex flex-column-reverse todo-list">
                 {items.map((item) => 
                     <li key={item.id}>
-                        <div className="form-check">
+                        <div className={`form-check ${item.complete ? "italics" : ""}`}>
                             <label className="form-check-label">
                                 <input
                                  className="checkbox" 
