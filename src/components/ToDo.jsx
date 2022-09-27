@@ -25,7 +25,20 @@ function ToDo() {
     // Passed to TodoList prop
     function deleteItem(deletedItem){
         const updatedTodos = todos.filter((item) => item.id !== deletedItem.id)
-        console.log(updatedTodos)
+        setTodos(updatedTodos)
+    }
+
+    // Update Todo Item
+    // Updates checked Boxes
+    function updateTodos(updatedItem){
+        const updatedTodos = todos.map((todo) => {
+            if (todo.id === updatedItem.id){
+                return updatedItem
+            } else {
+                return todo
+            }
+        })
+        setTodos(updatedTodos)
     }
 
     return (
@@ -38,7 +51,7 @@ function ToDo() {
                                 <div className="card-body">
                                     <h4 className="card-title">Awesome Todo list</h4>
                                     <TodoForm addItem={addItem}/>
-                                    <TodoList items={todos} deleteItem={deleteItem}/>
+                                    <TodoList items={todos} deleteItem={deleteItem} updateTodos={updateTodos}/>
                                 </div>
                             </div>
                         </div>
