@@ -17,7 +17,7 @@
     },
     {
       "title": "Configure server port ",
-      "complete": true,
+      "complete": false,
       "id": 7
     }
   ]
