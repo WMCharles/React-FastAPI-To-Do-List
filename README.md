@@ -1,6 +1,6 @@
 # React Todo List
 
-![image](https://github.com/WMCharles/React-Todo-List/blob/main/Todo.png)
+![image](https://github.com/WMCharles/React-Todo-List/blob/master/Todo.png)
 
 Clone the repository
  ```
