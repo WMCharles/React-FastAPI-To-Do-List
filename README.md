@@ -22,3 +22,9 @@ npm start
 ```
 npm run server
 ```
+
+## Resources
+
+Template 
+
+[BOOTSTRAP 4 AWESOME TODO LIST TEMPLATE](https://bbbootstrap.com/snippets/awesome-todo-list-template-25095891)
