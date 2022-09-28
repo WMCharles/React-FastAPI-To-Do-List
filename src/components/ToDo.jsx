@@ -8,7 +8,7 @@ function ToDo() {
 
     useEffect(
         () => {
-            fetch("http://localhost:3000/todos")
+            fetch("http://localhost:8001/todos")
             .then((res) => res.json())
             .then((items) => setTodos(items))
         },

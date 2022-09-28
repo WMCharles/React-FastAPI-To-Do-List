@@ -6,7 +6,7 @@ export default function TodoList({items, deleteItem, updateTodos}) {
     // Uses deleteItem to update the todos list (ToDo.jsx: line 26)
     // Handled by onClick event handler (line 25)
     function handleDelete(todo){
-        fetch(`http://localhost:3000/todos/${todo.id}`, {
+        fetch(`http://localhost:8001/todos/${todo.id}`, {
             method: "DELETE"
         })
         .then((res) => res.json())
@@ -15,7 +15,7 @@ export default function TodoList({items, deleteItem, updateTodos}) {
 
     // Updating Item - Checking checkbox
     function handleCheck(item){
-        fetch(`http://localhost:3000/todos/${item.id}`, {
+        fetch(`http://localhost:8001/todos/${item.id}`, {
             method: "PATCH",
             headers: {
                 "content-type":"application/json"

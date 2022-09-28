@@ -1,24 +1,24 @@
 {
   "todos": [
     {
-      "title": "Cook Rice for Supper",
-      "id": 1,
-      "complete": false
-    },
-    {
       "title": "Clean t-shirt",
       "id": 2,
-      "complete": false
+      "complete": true
     },
     {
       "title": "Figure out how to update checked",
       "id": 5,
-      "complete": false
+      "complete": true
     },
     {
       "title": "Just Updated Checked Box",
-      "complete": false,
+      "complete": true,
       "id": 6
+    },
+    {
+      "title": "Configure server port ",
+      "complete": true,
+      "id": 7
     }
   ]
 }

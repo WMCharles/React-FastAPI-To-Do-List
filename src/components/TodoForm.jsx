@@ -10,7 +10,7 @@ function TodoForm({addItem}) {
             complete: false
         }
 
-        fetch("http://localhost:3000/todos", {
+        fetch("http://localhost:8001/todos", {
             method: "POST",
             headers: {
                 "content-type":"application/json"
